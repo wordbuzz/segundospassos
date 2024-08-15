@@ -1,0 +1,212 @@
+- presumir o windows 10 ou 11
+- python 3.8 + ming + git + pacotes instalados 
+
+- requisito: criar conta no github
+
+0. Boas vindas (10 min)
+
+1. Usando a linha comando (15 min) 
+	- conceitos 3m 
+	- comandos de navegação 2m
+	- comandos para criar/deletar arquivos/diretórios 2m 
+	- mencionar permissões 2m
+	- tarefa 6min
+
+2. dominar o ciclo básico de trabalho no git/github (38 min)
+
+	(- tempo para quem não tem conta github)
+	- iniciar git (1 min)
+	- ciclo básico (modificar arquivo - ver modicações - add modificações - commit - log) (3 min)
+	- tarefa (criar projeto em diretório navegando pela cli) (7 min)
+	- criar projeto no remoto (push) (10 min)
+	- clonar projeto pequeno no github (3 min)
+	- tarefa (modificar o clone) (5 min)
+	- mencionar branch e merge (10 min)
+
+3. ferramentas python fundamentais (18 min)
+	- virtual environments
+		- conceito e motivação (pq usar?) (5 min)
+		- ciclo básico (criar; ativar; desativar; deletar) (5 min)
+	- pip
+		- conceito e motivação (mencionar alternativas...)(3 min)
+		- install/uninstall (2 min)
+		- mencionar permissões ...sudo (3 min) 
+	
+	- tarefa (criar ambiente; instalar pacotes; desinstalar; deletar ambiente)
+	- PyPy (5 min)
+
+	- setuptools.py
+
+4. INTERVALO (10 min)
+
+5. estrutura do diretório
+	- conceitos (12 min)
+		- o q é um package?
+		- pq fazer packages? (...distribuição & compartilhamento ...confiabilidade do código...)
+	
+	*** troubleshooting: execução de programa em pacote e importação (12 min)
+
+	- nome_do_projeto/src/nome_do_projeto (...pq deve ser assim? ...pq facilita distribuição...) (5 min) 	
+	- estrutura de arquivo geral (3 min)
+	- licença - mencionar (3 min)
+	- adding dependencies to your package (...pip, virtual environment, requirements.txt...) (5 min)  
+	- toml (ou tox) (20 min)
+		- o q é?
+		- pq usar?
+			- motivo 1
+			- ...
+			- motivo n
+		- ciclo básico (dar um modelo)
+	- prática do item 5 (20 min)
+
+
+6. Prática geral (criar pacote ; subir para repostório ; instalar pacote de terceiros)
+
+7 O que nós não vimos neste mini-curso
+	- ciclo de desenvolvimento ... testes
+	- versão
+	- licenças
+  
+
+
+
+
+###############################################################
+
+Este curso apresenta ferramentas e 'melhores práticas' para elaboração e distribuição de software (em Python). 
+Você sabe como elaborar programas (em Python ou outra linguagem) e agora quer dar o segundo passo. 
+Você quer elaborar programas para recolher/organizar dados, testar hipóteses de pesquisa 
+ou quem sabe implementar aquele projeto que vai trazer fama e fortuna. 
+Esses programas podem crescer em complexidade rapidamente e frequentemente são elaborados por mais de uma pessoa. 
+Como fazer que funcionem e que permaneçam gerenciaveis, confiaveis e portaveis?
+As comunidades de software pregam certos mandamentos para garantir essas propriedades. 
+Em sua essência, eles são simples e de fácil compreensão (documente seu código, teste seu código, use version control...).
+Mas as inúmeras maneiras de implementar esses mandamentos e a profusão de ferramentas no 'mercado' disponíveis para isso 
+frequentemente ofuscam essa simplicidade e confundem os usuários.
+Neste curso vamos apresentar essas estratégias apontando o caminho para o aprendizado de algumas delas e ensinando a prática 
+daquelas que são mais fundamentais. 
+Vamos focar sobre os seguintes tópicos: padronização do ambiente de programação; uso da linha de comando; uso de gerenciador de versões (git) ; 
+e em como estruturar de projetos para distribuir no repositório Pypi.
+
+
+0. Usando a linha comando.....??????????? como padronizar o ambiente ???????
+1. clonar projeto pequeno no github
+2. dominar o ciclo básico de trabalho no github
+3. ferramentas python fundamentais: virtual environments/pip/setuptools.py...)
+4. estrutura do diretório (licença, toml, )
+5. ciclo de desenvovimento (aperfeiçoar um app simples)
+6. Instalação e Importação do seu código
+
+
+- presumir o windows 10 ou 11
+- python 3.8 + ming + git + pacotes instalados 
+
+- requisito: criar conta no github
+(- tempo para quem não tem conta github)
+  - iniciar git (1 min)
+  - ciclo básico (modificar arquivo - ver modicações - add modificações - commit - log) (3 min)
+  - tarefa (criar projeto em diretório navegando pela cli) (7 min)
+  - criar projeto no remoto (push) (10 min)
+  - clonar projeto pequeno no github (3 min)
+  - tarefa (modificar o clone) (5 min)
+  - mencionar branch e merge
+
+0. Boas vindas (10 min)
+
+1. Usando a linha comando (15 min) 
+  - conceitos 3m 
+  - comandos de navegação 2m
+  - comandos para criar/deletar arquivos/diretórios 2m 
+  - mencionar permissões 2m
+  - tarefa 6min
+
+2. dominar o ciclo básico de trabalho no git/github (38 min)
+
+  (- tempo para quem não tem conta github)
+  - iniciar git (1 min)
+  - ciclo básico (modificar arquivo - ver modicações - add modificações - commit - log) (3 min)
+  - tarefa (criar projeto em diretório navegando pela cli) (7 min)
+  - criar projeto no remoto (push) (10 min)
+  - clonar projeto pequeno no github (3 min)
+  - tarefa (modificar o clone) (5 min)
+  - mencionar branch e merge (10 min)
+
+3. ferramentas python fundamentais (18 min)
+  - virtual environments
+    - conceito e motivação (pq usar?) (5 min)
+    - ciclo básico (criar; ativar; desativar; deletar) (5 min)
+  - pip
+    - conceito e motivação (mencionar alternativas...)(3 min)
+    - install/uninstall (2 min)
+    - mencionar permissões ...sudo (3 min) 
+  
+  - tarefa (criar ambiente; instalar pacotes; desinstalar; deletar ambiente)
+  - PyPy (5 min)
+
+  - setuptools.py
+
+4. INTERVALO (10 min)
+
+5. estrutura do diretório
+  - conceitos
+    - o q é um package?
+    - pq fazer packages? (...distribuição & compartilhamento ...confiabilidade do código...)
+  - nome_do_projeto/src/nome_do_projeto (...pq deve ser assim? ...pq facilita distribuição...)   
+  - estrutura de arquivo geral (3 min)
+  - licença - mencionar 
+  - adding dependencies to your package
+  - toml
+5. estrutura do diretório
+  - conceitos (12 min)
+    - o q é um package?
+    - pq fazer packages? (...distribuição & compartilhamento ...confiabilidade do código...)
+  
+  *** troubleshooting: execução de programa em pacote e importação (12 min)
+
+  - nome_do_projeto/src/nome_do_projeto (...pq deve ser assim? ...pq facilita distribuição...) (5 min)   
+  - estrutura de arquivo geral (3 min)
+  - licença - mencionar (3 min)
+  - adding dependencies to your package (...pip, virtual environment, requirements.txt...) (5 min)  
+  - toml (ou tox) (20 min)
+    - o q é?
+    - pq usar?
+      - motivo 1
+      - ...
+      - motivo n
+    - ciclo básico (dar um modelo)
+  - prática do item 5 (20 min)
+
+
+6. Prática geral (criar pacote ; subir para repostório ; instalar pacote de terceiros)
+
+7 O que nós não vimos neste mini-curso
+  - ciclo de desenvolvimento ... testes
+  - versão
+  - licenças
+5. estrutura do diretório
+  - conceitos (12 min)
+    - o q é um package?
+    - pq fazer packages? (...distribuição & compartilhamento ...confiabilidade do código...)
+  
+  *** troubleshooting: execução de programa em pacote e importação (12 min)
+
+  - nome_do_projeto/src/nome_do_projeto (...pq deve ser assim? ...pq facilita distribuição...) (5 min)   
+  - estrutura de arquivo geral (3 min)
+  - licença - mencionar (3 min)
+  - adding dependencies to your package (...pip, virtual environment, requirements.txt...) (5 min)  
+  - toml (ou tox) (20 min)
+    - o q é?
+    - pq usar?
+      - motivo 1
+      - ...
+      - motivo n
+    - ciclo básico (dar um modelo)
+  - prática do item 5 (20 min)
+
+
+6. Prática geral (criar pacote ; subir para repostório ; instalar pacote de terceiros)
+
+7 O que nós não vimos neste mini-curso
+  - ciclo de desenvolvimento ... testes
+  - versão
+  - licenças

@@ -1,0 +1,37 @@
+o que é o git? a descrição oficial diz que é uma ferramenta para controle de versão
+
+o que é controle de versão?
+
+por que usar o git? 
+
+	para não acontecer isso com seu diretório:
+	
+		tcc.docx
+		tcc_juro_por_deus_que_e_a_ultima.docx
+		tcc_rascunho.docx
+		tcc_rascunho_com a introdução.docx
+		tcc_versão_final.docx
+		tcc_versao_final_agora_vai.docx
+		tcc_versão_final_agora_vai_reloaded.docx
+
+	facilita a organização dos arquivos do projeto ao longo do tempo
+	simplifica o trabalho colaborativo
+	facilita compartilhar seu trabalho
+	facilita a correção de erros
+
+
+
+o git é perfeito?
+
+	não, o primeiro ponto negativo é que se trata de uma ferramenta complexa
+	para dominá-la é preciso investir seu tempo e sua massa cinzenta.
+
+	mas isso pode ser contornado até certo ponto apredendo aos poucos... só o que vc precisa para o momento
+
+	para dar o pontapé inicial, vamos apresentar aqui nossa versão de um ciclo básico de git
+
+
+usando com a linha de comando
+
+
+	
