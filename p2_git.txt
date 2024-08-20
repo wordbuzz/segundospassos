@@ -1,11 +1,17 @@
-o que é o git? a descrição oficial diz que é uma ferramenta para controle de versão
+o que é o git? 
 
-o que é controle de versão?
+ - é um software livre criado por Linus Torvalds para gerenciar os 
+   arquivos do sistema operacional Linux;
 
-por que usar o git? 
+ - a descrição oficial diz que é uma ferramenta de controle de versão distribuída
 
-	para não acontecer isso com seu diretório:
+...mas o que é controle de versão? 
+
+	- controle de versão é o gerenciamento das diferentes versões de um
+	 arquivo através do ciclo de desenvolvimento de um projeto; 
 	
+	- eis um exemplo de controle de versão...
+
 		tcc.docx
 		tcc_juro_por_deus_que_e_a_ultima.docx
 		tcc_rascunho.docx
@@ -13,6 +19,39 @@ por que usar o git?
 		tcc_versão_final.docx
 		tcc_versao_final_agora_vai.docx
 		tcc_versão_final_agora_vai_reloaded.docx
+	
+	- ...isso não é desejável...
+	
+	- as ferramentas para controle de versão são programas que auxiliam o 
+	controle de versão dos arquivos de um projeto;
+
+	- supondo um projeto onde há um único usuário, funciona assim...
+
+		o scv armazena uma cópia principal dos arquivos e, quando o usuário vai
+		editá-la, ao invés de disponibilizar essa cópia principal, disponibiliza
+		uma cópia secundária. O usuário edita essa cópia e, se satisfeito com 
+		elas, comunica o scv. O scv então registra as alterações. O scv também
+		mantém um histórico das alterações. Assim o usuário tem acesso a toda e
+		qualquer versão anterior de qualquer arquivo do projeto.
+	
+	- agora, vamos imaginar um projeto onde há mais de um usuário...
+		
+		Os scv mantêm um registro dos participantes do projeto, seus papéis 
+		dentro do projeto e podem até gerenciar quem tem permissão para fazer 
+		que tipo de mudança em quais arquivos.
+
+		No contexto atual, isso é facilitado pelo uso de redes de conectividade
+		(vulgo, internet etc). Os participantes conectam a uma versão central
+		do projeto (em um portal da www, por exemplo), se registram e baixam
+		para suas máquinas uma cópia. Usando o csv localmente, eles editam os
+		arquivos baixados e depois sobem as alterações para o repositório 
+		central. Dependendo das permissões do participante, as alterações podem
+		ser aceitas diretamente ou sob supervisão de um participante responsável
+		pela manutenção do repositório central.
+
+
+
+por que usar o git? 
 
 	facilita a organização dos arquivos do projeto ao longo do tempo
 	simplifica o trabalho colaborativo
@@ -24,14 +63,141 @@ por que usar o git?
 o git é perfeito?
 
 	não, o primeiro ponto negativo é que se trata de uma ferramenta complexa
-	para dominá-la é preciso investir seu tempo e sua massa cinzenta.
+	para dominá-la é preciso investir tempo e massa cinzenta.
 
-	mas isso pode ser contornado até certo ponto apredendo aos poucos... só o que vc precisa para o momento
+	mas isso pode ser contornado até certo ponto apredendo aos poucos... 
+	aprendendo a cada momento só o que vc precisa para aquele momento.
 
 	para dar o pontapé inicial, vamos apresentar aqui nossa versão de um ciclo básico de git
 
 
+o ciclo básico
+
+	=> init
+	=> editar
+	=> add (stage)
+	=> commit
+	=> reverter commit
+	=> push
+
+se o git ainda não foi instalado no seu SO Windows...
+
+	=> git instalar no windows
+
+	- vá ao portal https://gitforwindows.org/ e baixe o programa
+	- na instalação...
+
+    	Clique em “Next” quatro vezes (duas vezes se você já tiver instalado 
+		o Git anteriormente). 
+		Não altere nada nas telas Information, Location, Components e Start Menu.
+		No menu, “Choosing the default editor used by Git” selecione “Use the Nano editor by default” e clique em “Next”.
+    	
+		Na página que diz “Adjusting the name of the initial branch in new repositories” escolha “Let Git decide” 
+    	Selecione “Git from the command line and also from 3rd-party software”.
+		“Next”.
+
+		Selecione “Use bundled OpenSSH”.
+		Selecione “Use the native Windows Secure Channel Library”. “Next”.
+		Selecione “Checkout Windows-style, commit Unix-style line endings”.“Next”.
+		Selecione “Use Windows' default console window”. “Next”.
+		Selecione “Default (fast-forward or merge)”.  “Next”.
+		Selecione “Git Credential Manager” esteja selecionada. “Next”.
+		Selecione “Enable file system caching”.  “Next”.
+		Clique em “Install”.
+		Clique  em “Finish”  ou “Next”.
+
+		fonte: https://carpentries.github.io/workshop-template/#setup
+		fonte: https://youtu.be/339AEqk9c-8
+
 usando com a linha de comando
 
+=>
+$ git config --global user.name "Claudio"
+$ git config --global user.email "claud29@gmail.com"
 
+=>
+$ git config --list
+
+=> 
+$ cd ~/zipf
+$ ls
+
+
+=>
+$ git init .
 	
+
+=> 
+$ git status
+
+você vai ver isso...
+	On branch master
+
+	No commits yet
+
+	Untracked files:
+
+	(use "git add <file>..." to include in what will be committed)
+
+	bin/
+	data/
+	results/
+
+	nothing added to commit but untracked files
+	present (use "git add" to track)
+
+
+=> git add
+
+$ git add bin/countwords.py #stage as mudanças do arquio countwords.py
+$ git add bin #stage as mudanças no diretório bin
+$ git add . #stage as mudanças no diretório atual
+
+=> git commit 
+
+
+$ git commit -m "Add scripts, novels, word counts, and plots"
+
+
+você vai ver isso...
+
+	[master (root-commit) 173222b] Add scripts, novels, word counts, and plots
+	18 files changed, 145296 insertions(+)
+	create mode 100644 bin/book_summary.sh
+	...etc...
+
+=> incluir mais novos arquivos
+$ touch novo_arquivo.txt
+$git status
+
+
+On branch master
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
+
+novo_arquivo.txt
+
+nothing added to commit but untracked files
+present (use "git add" to track)
+
+=> ver o histórico
+
+git log
+
+=>
+$ git remote add origin https://github.com/wordbuzz/segundospassos.git
+
+=> 
+git remote -v
+
+=>
+$ git push origin master
+
+GLOSSÁRIO
+
+branch
+commit
+push
+stage
+track
+untracked files
